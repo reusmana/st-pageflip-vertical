@@ -5,7 +5,7 @@ import { terser } from 'rollup-plugin-terser';
 export default [
     {
         input: 'src/PageFlip.ts',
-        output: [{ file: 'dist/js/page-flip.browser.js', format: 'umd', name: 'St' }],
+        output: [{ file: 'dist/js/st-pageflip-vertical.browser.js', format: 'umd', name: 'St' }],
         plugins: [
             postcss(),
             typescript({ tsconfig: 'tsconfig.json', useTsconfigDeclarationDir: true }),
@@ -14,7 +14,7 @@ export default [
     },
     {
         input: 'src/PageFlip.ts',
-        output: [{ file: 'dist/js/page-flip.module.js', format: 'es' }],
+        output: [{ file: 'dist/js/st-pageflip-vertical.module.js', format: 'es' }],
         plugins: [
             postcss(),
             typescript({ tsconfig: 'tsconfig.json', useTsconfigDeclarationDir: true }),

@@ -96,7 +96,7 @@ export class HTMLRender extends Render {
             (this.getDirection() === FlipDirection.FORWARD && this.shadow.progress > 100) ||
             (this.getDirection() === FlipDirection.BACK && this.shadow.progress <= 100)
                 ? `transform: translate3d(0, 0, 0);`
-                : `transform: translate3d(0, 0, 0) rotateY(180deg);`;
+                : `transform: translate3d(0, 0, 0) rotateX(180deg);`;
 
         this.hardInnerShadow.style.cssText = newStyle;
     }
@@ -128,7 +128,7 @@ export class HTMLRender extends Render {
         newStyle +=
             (this.getDirection() === FlipDirection.FORWARD && this.shadow.progress > 100) ||
             (this.getDirection() === FlipDirection.BACK && this.shadow.progress <= 100)
-                ? `transform: translate3d(0, 0, 0) rotateY(180deg);`
+                ? `transform: translate3d(0, 0, 0) rotateX(180deg);`
                 : `transform: translate3d(0, 0, 0);`;
 
         this.hardShadow.style.cssText = newStyle;
